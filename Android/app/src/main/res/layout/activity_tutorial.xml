@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutIndicator" />
+
+        <RelativeLayout
+            android:id="@+id/layoutIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white">
+
+            <com.websthewords.giftlog.controls.CirclePageIndicator
+                android:id="@+id/cpiIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvNext"
+                style="@style/tutorial_command"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="30dp"
+                android:text="SKIP" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

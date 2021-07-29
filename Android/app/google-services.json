@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "166939248803",
+    "firebase_url": "https://gift-log-9728a.firebaseio.com",
+    "project_id": "gift-log-9728a",
+    "storage_bucket": "gift-log-9728a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166939248803:android:3921946ffdc7a4dc",
+        "android_client_info": {
+          "package_name": "com.websthewords.giftlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166939248803-9mhirsgkh9omqqhgdusk873kpv2h75gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.websthewords.giftlog",
+            "certificate_hash": "d45469729e12cb31a0c5d15bc5d835b43b79a6a1"
+          }
+        },
+        {
+          "client_id": "166939248803-9172452sl5dhb6hb2amg1eq90inqq3tu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.websthewords.giftlog",
+            "certificate_hash": "296c6c9b52f991fc472df9734128cb49fc0ed735"
+          }
+        },
+        {
+          "client_id": "166939248803-h0qf23i3gsdu816c6n0a5l7i61fqpbun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.websthewords.giftlog",
+            "certificate_hash": "9a3aded6176dcf331684b0e1e646c09aee4054a0"
+          }
+        },
+        {
+          "client_id": "166939248803-816m58lk37sfp3l9na54s0n6iq7ifhbu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.websthewords.giftlog",
+            "certificate_hash": "bd5cf71d7734e42d0f5106a279f919e586d52936"
+          }
+        },
+        {
+          "client_id": "166939248803-rgls1a3lck7gkj66tg9s5b3oj9ettnpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.websthewords.giftlog",
+            "certificate_hash": "61f7f4ae4b3c2fd4af46b5afbdef2e384500a0be"
+          }
+        },
+        {
+          "client_id": "166939248803-931ksv0g9pen2sm7qee6p5ct24i617eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmVDqUoNHLHf_BVRvOv3kJXupXD84sbzo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166939248803-931ksv0g9pen2sm7qee6p5ct24i617eq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166939248803-j4puelr8n2sufpmuo7aie1li3vh9ssr8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.giftlogapp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

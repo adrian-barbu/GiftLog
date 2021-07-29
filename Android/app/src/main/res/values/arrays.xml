@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="backMenu">
+        <item>Continue</item>
+        <item>Save</item>
+        <item>Discard</item>
+    </string-array>
+
+    <string-array name="giftStatus">
+        <item>Keep</item>
+        <item>Regift</item>
+        <item>Return</item>
+        <item>Exchange</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="giftStatusWithClear">
+        <item>Keep</item>
+        <item>Regift</item>
+        <item>Return</item>
+        <item>Exchange</item>
+        <item>None</item>
+        <item>Clear filter</item>
+    </string-array>
+
+    <string-array name="giftTypes">
+        <item>Books / Stationery</item>
+        <item>Toys / Games</item>
+        <item>Electronics / Gadgets</item>
+        <item>Clothing</item>
+        <item>Food / Drink</item>
+        <item>Cash</item>
+        <item>Vouchers / Gift Certificates</item>
+        <item>Home / Garden / Pets / DIY</item>
+        <item>Health / Fitness / Lifestyle</item>
+        <item>Sports / Outdoors</item>
+        <item>Jewellery</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="addCntactMenu">
+        <item>Add contact from phone</item>
+        <item>Add contact manually</item>
+    </string-array>
+
+    <string-array name="deleteContactMenu">
+        <item>Delete Contact</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="deleteGiftMenu">
+        <item>Delete Gift</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="deleteEventMenu">
+        <item>Delete Event</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="giftSortOptions">
+        <item>A to Z</item>
+        <item>Z to A</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="giftThanksSentOptions">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="eventSortOptions">
+        <item>A to Z</item>
+        <item>Z to A</item>
+        <item>Newest</item>
+        <item>Oldest</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="imageEditOptions">
+        <item>Show Image</item>
+        <item>Delete Image</item>
+        <item>Cancel</item>
+    </string-array>
+
+</resources>

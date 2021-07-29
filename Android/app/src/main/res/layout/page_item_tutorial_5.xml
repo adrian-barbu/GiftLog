@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/tutorial_5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                style="@style/common_icon"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tutorial_icon_5" />
+
+            <TextView
+                style="@style/tutorial_title"
+                android:text="@string/tutorial_5_title" />
+
+            <TextView
+                style="@style/tutorial_desc"
+                android:text="@string/tutorial_5_desc" />
+
+            <TextView
+                android:id="@+id/tvLetsGo"
+                style="@style/tutorial_command"
+                android:layout_marginTop="40dp"
+                android:text="LET\'S GO" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

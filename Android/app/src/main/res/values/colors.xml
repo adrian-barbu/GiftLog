@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorEditBoxBg">#40ffffff</color>
+
+    <color name="colorMagento">#c100b1</color>
+    <color name="colorMagentoDark">#97008b</color>
+
+    <color name="colorFacebook">#3e66ad</color>
+    <color name="colorFacebookDark">#304f86</color>
+
+    <color name="colorGPlus">#c84631</color>
+    <color name="colorGPlusDark">#8f3324</color>
+
+    <color name="colorMain">#d7d7d7</color>
+    <color name="colorSideMenuBG">#3c3c3c</color>
+    <color name="colorBlue">#4eb8aa</color>
+
+    <color name="colorContact">#9053a8</color>
+    <color name="colorEvent">#5d99a9</color>
+    <color name="colorWishList">#4eb8ab</color>
+
+    <color name="default_circle_indicator_fill_color">@color/colorPrimary</color>
+    <color name="default_circle_indicator_page_color">@android:color/darker_gray</color>
+    <color name="default_circle_indicator_stroke_color">@color/colorPrimary</color>
+
+</resources>

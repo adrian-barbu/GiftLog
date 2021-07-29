@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22000000"
+        android:padding="10dp">
+
+        <!-- Cancel -->
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/medium_label"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:text="Cancel"
+            android:textColor="@color/colorBlue" />
+
+        <!-- Title -->
+
+        <TextView
+            style="@style/header_label"
+            android:layout_centerInParent="true"
+            android:text="Add contact" />
+
+        <!-- Done -->
+
+        <ImageView
+            android:id="@+id/ivDone"
+            style="@style/header_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_done" />
+
+    </RelativeLayout>
+
+    <!-- Search Keyword -->
+
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_dark_bg_shape"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/etKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivClearKeyword"
+            android:layout_toRightOf="@+id/ivSearch"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivClearKeyword"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_cancel" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHint"
+        style="@style/medium_label"
+        android:layout_below="@+id/layoutSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_contact_hint"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHint"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvNoContacts"
+        style="@style/medium_label"
+        android:layout_centerInParent="true"
+        android:text="@string/no_remaining_contacts"
+        android:visibility="gone" />
+
+</RelativeLayout>

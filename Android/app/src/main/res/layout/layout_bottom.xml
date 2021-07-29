@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_bg_shape"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!-- Gifts -->
+
+    <LinearLayout
+        android:id="@+id/tabGifts"
+        style="@style/bottom_tab_item_style"
+        android:onClick="onTabClick">
+
+        <ImageView
+            android:id="@+id/ivGift"
+            style="@style/menu_item_icon"
+            android:src="@drawable/ic_gift" />
+
+        <TextView
+            android:id="@+id/tvGifts"
+            style="@style/bottom_label"
+            android:text="@string/sm_gifts" />
+    </LinearLayout>
+
+    <!-- Events -->
+
+    <LinearLayout
+        android:id="@+id/tabEvents"
+        style="@style/bottom_tab_item_style"
+        android:onClick="onTabClick">
+
+        <ImageView
+            android:id="@+id/ivEvents"
+            style="@style/menu_item_icon"
+            android:src="@drawable/ic_events" />
+
+        <TextView
+            android:id="@+id/tvEvents"
+            style="@style/bottom_label"
+            android:text="@string/sm_events" />
+    </LinearLayout>
+
+    <!-- Contacts -->
+
+    <LinearLayout
+        android:id="@+id/tabContacts"
+        style="@style/bottom_tab_item_style"
+        android:onClick="onTabClick">
+
+        <ImageView
+            android:id="@+id/ivContacts"
+            style="@style/menu_item_icon"
+            android:src="@drawable/ic_contacts" />
+
+        <TextView
+            android:id="@+id/tvContacts"
+            style="@style/bottom_label"
+            android:text="@string/sm_contacts" />
+    </LinearLayout>
+
+    <!-- Gift Ideas -->
+
+    <LinearLayout
+        android:id="@+id/tabGiftIdeas"
+        style="@style/bottom_tab_item_style"
+        android:onClick="onTabClick">
+
+        <ImageView
+            android:id="@+id/ivGiftIdeas"
+            style="@style/menu_item_icon"
+            android:src="@drawable/ic_gift_ideas" />
+
+        <TextView
+            android:id="@+id/tvGiftIdeas"
+            style="@style/bottom_label"
+            android:text="@string/sm_gift_ideas" />
+    </LinearLayout>
+</LinearLayout>

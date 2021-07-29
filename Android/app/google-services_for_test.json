@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "907688928544",
+    "firebase_url": "https://giftlog-test.firebaseio.com",
+    "project_id": "giftlog-test",
+    "storage_bucket": "giftlog-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907688928544:android:3921946ffdc7a4dc",
+        "android_client_info": {
+          "package_name": "com.websthewords.giftlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907688928544-2muam6qo82ej11854dtrn722iubo7kmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5M10cijfe5N8hnSnbRiw4lFKQj4nVJ3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

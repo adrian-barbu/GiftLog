@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Cancel -->
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/medium_label"
+            android:text="Cancel"
+            android:textColor="@color/colorBlue" />
+
+        <!-- Done -->
+
+        <TextView
+            android:id="@+id/tvDone"
+            style="@style/medium_label"
+            android:layout_alignParentRight="true"
+            android:text="Done"
+            android:textColor="@color/colorBlue" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etTitle"
+        style="@style/normal_editbox"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editbox_black_bg_shape"
+        android:hint="Please input the title"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@android:color/darker_gray" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:endYear="2020"
+        android:spinnersShown="true"
+        android:startYear="1970" />
+
+</LinearLayout>

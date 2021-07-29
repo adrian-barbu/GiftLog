@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical">
+
+    <!-- Header Bar -->
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_creation_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivGiftImage"
+                style="@style/creation_header_icon" />
+
+            <TextView
+                android:id="@+id/tvGiftTitle"
+                style="@style/creation_header_title" />
+
+            <!-- Gift Info -->
+
+            <RelativeLayout
+                android:id="@+id/layoutGiftInfo"
+                style="@style/creation_layout"
+                android:background="@color/colorMagento">
+
+                <ImageView
+                    android:id="@+id/ivGiftIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_gift" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivGiftIcon"
+                    android:text="@string/gift_info" />
+
+                <ImageView
+                    android:id="@+id/ivGiftArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_up" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/layoutExpGiftInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:ael_duration="200"
+                app:ael_expanded="true"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Gift Name -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Gift Name*" />
+
+                    <EditText
+                        android:id="@+id/etGiftName"
+                        style="@style/common_item_editbox"
+                        android:hint="Name (maximum 20 characters)"
+                        android:maxLength="20"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <View style="@style/common_item_separator" />
+
+                    <!-- In/Out -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="In/Out" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/blue_round_bg_shape"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                            android:id="@+id/toggleInOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:activeBgColor="@color/colorBlue"
+                            app:activeTextColor="@android:color/white"
+                            app:inactiveBgColor="@android:color/white"
+                            app:inactiveTextColor="@color/colorBlue"
+                            app:textToggleLeft="Received"
+                            app:textToggleRight="Given"
+                            app:toggleWidth="90dp" />
+                    </LinearLayout>
+
+                    <!-- Gift Type -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Gift Type" />
+
+                    <TextView
+                        android:id="@+id/tvGiftType"
+                        style="@style/common_item_editbox"
+                        android:hint="Select"
+                        android:onClick="onClick" />
+
+                    <View style="@style/common_item_separator" />
+
+                    <!-- Description -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Description" />
+
+                    <EditText
+                        android:id="@+id/etGiftDescription"
+                        style="@style/common_item_editbox_for_multiline"
+                        android:hint="Description of the Gift" />
+
+                    <View style="@style/common_item_separator" />
+
+                    <!-- Value -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Value" />
+
+                    <EditText
+                        android:id="@+id/etGiftValue"
+                        style="@style/common_item_editbox"
+                        android:hint="Gift Value"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:onClick="onClick" />
+
+                    <View style="@style/common_item_separator" />
+
+                    <!-- Gift Receipt -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Gift Receipt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/blue_round_bg_shape"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                            android:id="@+id/toggleGiftReceipt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:activeBgColor="@color/colorBlue"
+                            app:activeTextColor="@android:color/white"
+                            app:inactiveBgColor="@android:color/white"
+                            app:inactiveTextColor="@color/colorBlue"
+                            app:textToggleLeft="No"
+                            app:textToggleRight="Yes"
+                            app:toggleWidth="90dp" />
+                    </LinearLayout>
+
+                    <!-- Gift Status -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Gift Status*" />
+
+                    <TextView
+                        android:id="@+id/tvGiftStatus"
+                        style="@style/common_item_editbox"
+                        android:onClick="onClick"
+                        android:text="None" />
+
+                    <View style="@style/common_item_separator" />
+
+                    <!-- Pictures -->
+
+                    <TextView
+                        style="@style/common_item_label"
+                        android:text="Pictures" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/layoutImageList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/ivPictureSelect"
+                                android:layout_width="@dimen/giftImageSize"
+                                android:layout_height="@dimen/giftImageSize"
+                                android:background="@android:color/darker_gray"
+                                android:onClick="onClick"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_photo_select" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <!-- Contact Info -->
+
+            <RelativeLayout
+                android:id="@+id/layoutContactInfo"
+                style="@style/creation_layout"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContact">
+
+                <ImageView
+                    android:id="@+id/ivContactIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_contact_holder" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivContactIcon"
+                    android:text="@string/contact_info" />
+
+                <ImageView
+                    android:id="@+id/ivContactArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/layoutExpContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivAddContact"
+                        style="@style/common_icon"
+                        android:layout_gravity="center"
+                        android:onClick="onClick"
+                        android:src="@drawable/ic_plus_contact" />
+
+                    <!-- Contact List -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutContactList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutForThanks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layoutSendThanks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/action_button_magento_bg_shape"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_send_thanks" />
+
+                            <TextView
+                                style="@style/common_item_label"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Send Thank you"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@android:color/white" />
+                        </LinearLayout>
+
+                        <!-- Sent Thanks -->
+
+                        <TextView
+                            style="@style/common_item_label"
+                            android:layout_marginTop="20dp"
+                            android:text="Thank You Sent" />
+
+                        <TextView
+                            android:id="@+id/tvThankSent"
+                            style="@style/common_item_editbox"
+                            android:onClick="onClick"
+                            android:text="No" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <!-- Event Info -->
+
+            <RelativeLayout
+                android:id="@+id/layoutEventInfo"
+                style="@style/creation_layout"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorEvent">
+
+                <ImageView
+                    android:id="@+id/ivEventIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_events" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivEventIcon"
+                    android:text="@string/event_info" />
+
+                <ImageView
+                    android:id="@+id/ivEventArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/layoutExpEventInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivAddEvent"
+                        style="@style/common_icon"
+                        android:layout_gravity="center"
+                        android:onClick="onClick"
+                        android:src="@drawable/ic_plus_event" />
+
+                    <!-- Event List -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutEventList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

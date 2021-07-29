@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">GiftLog</string>
+
+    <!-- Login -->
+
+    <string name="login">Log in</string>
+    <string name="signin_with_facebook">Sign in with Facebook</string>
+    <string name="signin_with_gplus">Sign in with Google+</string>
+
+    <string name="register_account">Register Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+
+    <string name="warning_all_field_required">Please enter all fields</string>
+    <string name="wrong_invalid_email">Invalid email address</string>
+    <string name="wrong_password">Please check password again</string>
+    <string name="warning_weak_password">Password should be at least 6 characters</string>
+
+    <!-- Register -->
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="signup_with_facebook">Sign up with Facebook</string>
+    <string name="signup_with_gplus">Sign up with Google+</string>
+
+    <!-- Forgot Password -->
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_passowrd_hint">Please enter your email address that you registered with and we will send you a password reset link</string>
+    <string name="send">Send</string>
+
+    <!-- Side Menu -->
+    <string name="sm_gifts">Gifts</string>
+    <string name="sm_events">Events</string>
+    <string name="sm_contacts">Contacts</string>
+    <string name="sm_gift_ideas">Gift Ideas</string>
+    <string name="sm_faq">Faq</string>
+    <string name="sm_share_app">Share App</string>
+    <string name="sm_email_gift">Email Gift Data</string>
+    <string name="sm_privacy_policy">Privacy Policy</string>
+    <string name="sm_terms_conditions">Terms &amp; Conditions</string>
+    <string name="sm_contact_us">Contact Us</string>
+    <string name="sm_logout">Log out</string>
+
+    <!-- Main -->
+    <string name="username">User Name</string>
+    <string name="view_profile">View Profile</string>
+
+    <!-- Gifts -->
+    <string name="gifts_all">All</string>
+    <string name="gifts_received">Received</string>
+    <string name="gifts_given">Given</string>
+
+    <string name="gift_info">Gift Info</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="event_info">Event Info</string>
+    <string name="contact_name">CONTACT NAME</string>
+
+    <string name="filter_by">Filter by</string>
+    <string name="sort_by">Sort by</string>
+
+    <string name="no_gifts">No gifts were found</string>
+    <string name="no_events">No events were found</string>
+
+    <string name="warning_create_gift_1">Name and Status of the gift cannot be empty</string>
+    <string name="warning_create_gift_1_text">Please complete these fields.</string>
+
+    <string name="warning_create_gift_2">At elast one contact is required for the gift</string>
+    <string name="warning_create_gift_2_text">Please add one or more contacts.</string>
+
+    <!-- Events -->
+    <string name="events_all">All</string>
+    <string name="events_attended">Attended</string>
+    <string name="events_hosted">Hosted</string>
+
+    <string name="events_info">Info</string>
+    <string name="event_attendees">Attendees</string>
+    <string name="event_gifts">Gifts</string>
+    <string name="event_wishlists">Wishlists</string>
+
+    <string name="warning_create_event_1">Title &amp; Dates cannot be empty.</string>
+    <string name="warning_create_event_1_text">Please complete these fields.</string>
+
+    <!-- Contacts -->
+    <string name="add_contact_title">Add manually or import from phonebook</string>
+    <string name="dates">Dates</string>
+
+    <string name="invite_message">Hi,\n\nCheck out GiftLog – it\'s a great, free, gift management app I\'m using to log gifts, send thank you messages and manage wish lists!\n\nRegards,\n</string>
+
+    <!-- Selection -->
+    <string name="select_contact_hint">Select at least one contact</string>
+    <string name="no_remaining_contacts">No contacts were found</string>
+    <string name="no_selected_contacts">You didn\'t select any contact</string>
+
+    <string name="no_remaining_events">No events were found</string>
+
+    <!-- User Profile -->
+    <string name="actions">Actions</string>
+
+    <string name="logout">Log out</string>
+    <string name="email_gift_data">Email Gift Data</string>
+    <string name="delete_profile">Delete profile</string>
+    <string name="delete">Delete</string>
+
+    <string name="notifications">Notifications</string>
+
+    <!-- Search -->
+    <string name="search">Search</string>
+
+    <!-- Share App -->
+    <string name="share_app_text">Hi,\n\nCheck out GiftLog – it\'s a great, free, gift management app I\'m using to log gifts, send thank you messages and manage wish lists!\n\nRegards,\n</string>
+    <string name="download_app_text">\nDownload the app now:\nwww.giftlog.co.uk\n\n</string>
+
+    <!-- Warnings -->
+
+    <string name="logout_confirm">Are you sure you want to log out?</string>
+
+    <string name="warning_create_contact_1">First name cannot be empty</string>
+    <string name="warning_create_contact_1_text">Please enter first name.</string>
+
+    <string name="warning_no_date_title">Title cannot be empty</string>
+    <string name="warning_no_date_title_hint">Please enter a title for this date</string>
+    <string name="wishlist">WishList</string>
+
+    <string name="warning_invalid_email">Email format is wrong</string>
+
+    <string name="warning_gift_no_contacts">At least one contact is required for the gift</string>
+    <string name="warning_gift_no_contacts_text">Please add one or more contacts.</string>
+
+    <string name="warning_gift_no_saved_title">Changes not saved</string>
+    <string name="warning_gift_no_saved_message">Do you want to continue editing or discard changes?</string>
+
+    <string name="warning_gift_cannot_add_event_more">Gift can have only one event.</string>
+    <string name="warning_gift_cannot_add_event_more_text">To add a new event to this gift, please remove the existing one.</string>
+
+    <string name="warning_gift_cannot_send_thanks">This gift is given by you.</string>
+    <string name="warning_gift_cannot_send_thanks_text">You cannot send \'Thank you\' message.</string>
+
+    <string name="warning_gift_request_add_contacts">You did not add any contact for the gift.</string>
+    <string name="warning_gift_request_add_contacts_text">Please add at least one contact.</string>
+
+    <string name="warning_delete_account">Are you sure want to delete your account?</string>
+
+    <string name="warning_gift_info_already_set">Gift info is already populated. To amend, please open \'Gifts\' screen.</string>
+    <string name="warning_event_info_already_set">Event info is already populated. To amend, please open \'Events\' screen.</string>
+    <string name="warning_contact_info_already_set">Contact info is already populated. To amend, please open \'Contacts\' screen.</string>
+
+    <string name="not_connected_to_network">\nOops, you don\'t seem to be connected to the Internet. Please check your settings and try again.\n</string>
+    <string name="okay">Okay</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_1_title">Organize Your Gifts</string>
+    <string name="tutorial_1_desc">Add unlimited gifts, events &amp; contacts for free!</string>
+
+    <string name="tutorial_2_title">Log All Gifts</string>
+    <string name="tutorial_2_desc">Effortlessly manage all your gifts.\nSend thank you messages for gifts you receive.</string>
+
+    <string name="tutorial_3_title">Organize Your Events</string>
+    <string name="tutorial_3_desc">Create Events to group gifts.\nAdd and share wishlists.</string>
+
+    <string name="tutorial_4_title">Import Your Contacts</string>
+    <string name="tutorial_4_desc">Import contacts from your device or add them manually.</string>
+
+    <string name="tutorial_5_title">Great Gift Idea\'s</string>
+    <string name="tutorial_5_desc">Never buy an unwanted gift again!\nShare your GiftLog gift lists.</string>
+
+    <string name="facebook_app_id_for_real">294599460948836</string>
+    <string name="facebook_app_id_for_test">294599460948836</string>
+</resources>

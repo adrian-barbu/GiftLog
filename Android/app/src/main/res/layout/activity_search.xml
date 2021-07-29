@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical">
+
+    <!-- Header Bar -->
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+
+            <!-- Back Icon -->
+
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/header_icon"
+                android:layout_centerVertical="true"
+                android:onClick="onBack"
+                android:src="@drawable/ic_back_blue" />
+
+            <!-- Title -->
+
+            <TextView
+                style="@style/header_label"
+                android:layout_centerInParent="true"
+                android:text="@string/search" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Search Keyword -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_bg_shape"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/etKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ivClearKeyword"
+            android:layout_toRightOf="@+id/ivSearch"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivClearKeyword"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:onClick="onClick"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_cancel" />
+    </RelativeLayout>
+
+    <!-- Search Result -->
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/normal_label"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="0 results found"
+        android:textColor="@color/colorBlue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <!-- Gifts -->
+
+            <RelativeLayout
+                android:id="@+id/layoutGifts"
+                style="@style/creation_layout"
+                android:background="@color/colorMagento">
+
+                <ImageView
+                    android:id="@+id/ivGiftIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_gift" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivGiftIcon"
+                    android:text="@string/sm_gifts" />
+
+                <ImageView
+                    android:id="@+id/ivGiftArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_up" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/layoutExpGifts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Gift List -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutGiftList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <!-- Events -->
+
+            <RelativeLayout
+                android:id="@+id/layoutEvents"
+                style="@style/creation_layout"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorContact">
+
+                <ImageView
+                    android:id="@+id/ivEventIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_events" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivEventIcon"
+                    android:text="@string/sm_events" />
+
+                <ImageView
+                    android:id="@+id/ivEventArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_up" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/layoutExpEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Event List -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutEventList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <!-- Contacts -->
+
+            <RelativeLayout
+                android:id="@+id/layoutContacts"
+                style="@style/creation_layout"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorEvent">
+
+                <ImageView
+                    android:id="@+id/ivContactIcon"
+                    style="@style/creation_icon"
+                    android:src="@drawable/ic_contact_holder" />
+
+                <TextView
+                    style="@style/creation_label"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivContactIcon"
+                    android:text="@string/sm_contacts" />
+
+                <ImageView
+                    android:id="@+id/ivContactArrowIcon"
+                    style="@style/creation_arrow_icon"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/layoutExpContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Contact List -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutContactList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

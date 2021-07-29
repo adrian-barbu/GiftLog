@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- Main Layout -->
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_logo" />
+
+        <!-- Email -->
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/normal_editbox"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/normal_editbox"
+            android:layout_marginTop="@dimen/login_item_margin"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <!-- Login -->
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/normal_action_label"
+            android:layout_marginTop="@dimen/login_item_margin"
+            android:background="@drawable/action_button_magento_bg_shape"
+            android:onClick="onLogin"
+            android:text="@string/login" />
+
+        <!-- Facebook Login -->
+
+        <LinearLayout
+            android:id="@+id/layoutFacebookLogin"
+            style="@style/normal_action_layout"
+            android:onClick="onFacebookLogin"
+            android:layout_marginTop="@dimen/login_item_margin"
+            android:background="@drawable/action_button_facebook_bg_shape">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_facebook" />
+
+            <TextView
+                style="@style/normal_action_label"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/signin_with_facebook" />
+        </LinearLayout>
+
+        <!-- Google+ Login -->
+
+        <LinearLayout
+            android:id="@+id/layoutGoogleLogin"
+            style="@style/normal_action_layout"
+            android:onClick="onGoogleLogin"
+            android:layout_marginTop="@dimen/login_item_margin"
+            android:background="@drawable/action_button_gplus_bg_shape">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_gplus" />
+
+            <TextView
+                style="@style/normal_action_label"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/signin_with_gplus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_item_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/normal_label"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="onRegister"
+                android:text="@string/register_account" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                style="@style/normal_label"
+                android:layout_width="0dp"
+                android:onClick="onForgotPassword"
+                android:layout_weight="1"
+                android:text="@string/forgot_password" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_item_margin">15dp</dimen>
+
+    <!-- Sliding Menu -->
+    <dimen name="sideMenuOffset">270dp</dimen>
+
+    <dimen name="giftImageSize">50dp</dimen>
+    <dimen name="giftImageMargin">8dp</dimen>
+
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+
+</resources>

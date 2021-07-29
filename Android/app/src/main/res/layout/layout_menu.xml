@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSideMenuBG"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_photo_empty" />
+
+                <LinearLayout
+                    android:id="@+id/layoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="onMenuItemClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        style="@style/normal_label"
+                        android:text="@string/username"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/common_label"
+                        android:text="@string/view_profile"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Gifts -->
+
+            <LinearLayout
+                android:id="@+id/layoutGifts"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_gift" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_gifts" />
+            </LinearLayout>
+
+            <!-- Events -->
+
+            <LinearLayout
+                android:id="@+id/layoutEvents"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_events" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_events" />
+            </LinearLayout>
+
+            <!-- Contacts -->
+
+            <LinearLayout
+                android:id="@+id/layoutContacts"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_contacts" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_contacts" />
+            </LinearLayout>
+
+            <!-- Gift Ideas -->
+
+            <LinearLayout
+                android:id="@+id/layoutGiftIdeas"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_gift_ideas" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_gift_ideas" />
+            </LinearLayout>
+
+            <!-- FAQ -->
+
+            <LinearLayout
+                android:id="@+id/layoutFaq"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_faq" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_faq" />
+            </LinearLayout>
+
+            <!-- Share App -->
+
+            <LinearLayout
+                android:id="@+id/layoutShareApp"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_share_app" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_share_app" />
+            </LinearLayout>
+
+            <!-- Email Gift Data -->
+
+            <LinearLayout
+                android:id="@+id/layoutEmailGift"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_email_gift" />
+            </LinearLayout>
+
+            <!-- Privacy Policy -->
+
+            <LinearLayout
+                android:id="@+id/layoutPrivacyPolicy"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_privacy_policy" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_privacy_policy" />
+            </LinearLayout>
+
+            <!-- Terms & Conditions -->
+
+            <LinearLayout
+                android:id="@+id/layoutTermsConditions"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_terms_conditions" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_terms_conditions" />
+            </LinearLayout>
+
+            <!-- Contacts Us -->
+
+            <LinearLayout
+                android:id="@+id/layoutContactUs"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_contact_us" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_contact_us" />
+            </LinearLayout>
+
+            <!-- Log Out -->
+
+            <LinearLayout
+                android:id="@+id/layoutLogout"
+                style="@style/menu_item_layout">
+
+                <ImageView
+                    style="@style/menu_item_icon"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    style="@style/menu_item_label"
+                    android:text="@string/sm_logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

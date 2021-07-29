@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Bar -->
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+
+            <!-- Done -->
+
+            <TextView
+                style="@style/medium_label"
+                android:layout_centerVertical="true"
+                android:onClick="onBack"
+                android:text="Done"
+                android:textColor="@color/colorBlue" />
+
+            <!-- Title -->
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/header_label"
+                android:layout_centerInParent="true"
+                android:text="FAQ" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeader" />
+
+</RelativeLayout>
