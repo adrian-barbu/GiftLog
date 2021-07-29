@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="GiftLogApp" customModuleProvider="target">
+            <connections>
+                <outlet property="resultsLabel" destination="cT2-33-f6n" id="dGy-nd-1Z1"/>
+                <outlet property="searchBarContainer" destination="Chf-gp-W0u" id="411-ZV-x7t"/>
+                <outlet property="tableView" destination="6S3-97-5Vu" id="JbS-Tv-zqC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-97-5Vu" customClass="STCollapseTableView">
+                    <rect key="frame" x="10" y="94" width="355" height="573"/>
+                    <color key="backgroundColor" red="0.92541915180000001" green="0.92553013559999997" blue="0.92538142199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JCb-Fl-vIw"/>
+                        <outlet property="delegate" destination="-1" id="9zX-sL-DVb"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-gp-W0u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.9254191517829895" green="0.92553013563156128" blue="0.92538142204284668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LuV-q3-ADe"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 results found" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-33-f6n">
+                    <rect key="frame" x="0.0" y="44" width="365" height="50"/>
+                    <color key="backgroundColor" red="0.9254191517829895" green="0.92553013563156128" blue="0.92538142204284668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lU3-vY-W1t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.31372547149658203" green="0.721568763256073" blue="0.67058825492858887" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.9254191517829895" green="0.92553013563156128" blue="0.92538142204284668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6S3-97-5Vu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="218-Bd-4ie"/>
+                <constraint firstItem="cT2-33-f6n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="95C-Tz-sKS"/>
+                <constraint firstAttribute="trailing" secondItem="Chf-gp-W0u" secondAttribute="trailing" id="BwW-Qj-3Ge"/>
+                <constraint firstItem="Chf-gp-W0u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F7t-Cl-sQi"/>
+                <constraint firstItem="cT2-33-f6n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="I5N-yp-duZ"/>
+                <constraint firstItem="6S3-97-5Vu" firstAttribute="top" secondItem="cT2-33-f6n" secondAttribute="bottom" id="Iey-TF-InS"/>
+                <constraint firstItem="Chf-gp-W0u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KnE-9s-90b"/>
+                <constraint firstAttribute="trailing" secondItem="6S3-97-5Vu" secondAttribute="trailing" constant="10" id="aZ7-8b-Eyp"/>
+                <constraint firstAttribute="bottom" secondItem="6S3-97-5Vu" secondAttribute="bottom" id="bPB-YW-9YL"/>
+                <constraint firstAttribute="trailing" secondItem="cT2-33-f6n" secondAttribute="trailing" constant="10" id="hfc-f8-gc0"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

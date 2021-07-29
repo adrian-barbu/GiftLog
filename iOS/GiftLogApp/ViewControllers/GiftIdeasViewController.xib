@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftIdeasViewController" customModule="GiftLogApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomNavigationBar" destination="b3u-Y3-b8k" id="7Ae-zD-ICZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="vR6-fI-V7v" id="yCi-wm-BAn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3u-Y3-b8k" customClass="BottomNavigationBar" customModule="GiftLogApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-wg-hzV">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qR6-wg-hzV" firstAttribute="leading" secondItem="b3u-Y3-b8k" secondAttribute="leading" id="8CN-45-4HF"/>
+                        <constraint firstAttribute="height" constant="64" id="Fcz-dX-ffx"/>
+                        <constraint firstAttribute="trailing" secondItem="qR6-wg-hzV" secondAttribute="trailing" id="InJ-Dy-MSa"/>
+                        <constraint firstItem="qR6-wg-hzV" firstAttribute="top" secondItem="b3u-Y3-b8k" secondAttribute="top" id="ffo-yC-u6Z"/>
+                        <constraint firstAttribute="bottom" secondItem="qR6-wg-hzV" secondAttribute="bottom" id="vlU-98-2mf"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vR6-fI-V7v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="x27-dY-K2R"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b3u-Y3-b8k" firstAttribute="top" secondItem="vR6-fI-V7v" secondAttribute="bottom" id="C47-9b-9mc"/>
+                <constraint firstItem="b3u-Y3-b8k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CSN-fX-jGa"/>
+                <constraint firstAttribute="trailing" secondItem="b3u-Y3-b8k" secondAttribute="trailing" id="FUp-vg-TU1"/>
+                <constraint firstAttribute="bottom" secondItem="b3u-Y3-b8k" secondAttribute="bottom" id="I5i-b9-Vfq"/>
+                <constraint firstItem="vR6-fI-V7v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RiT-5a-v9U"/>
+                <constraint firstAttribute="trailing" secondItem="vR6-fI-V7v" secondAttribute="trailing" id="kBf-z7-mV3"/>
+                <constraint firstItem="vR6-fI-V7v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tzD-pk-UdO"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient" width="752" height="133"/>
+    </resources>
+</document>

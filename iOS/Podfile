@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GiftLogApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GiftLogApp
+    pod 'PKHUD',
+    :git => 'https://github.com/pkluz/PKHUD.git',
+    :branch => 'master'
+    pod 'Kingfisher',
+    :git => 'https://github.com/onevcat/Kingfisher.git',
+    :branch => 'master'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'FBSDKLoginKit'
+    pod 'GoogleSignIn'
+    pod 'FDTake',
+    :git => 'https://github.com/fulldecent/FDTake',
+    :branch => 'master'
+    pod 'UIColor_Hex_Swift',
+    :git => 'https://github.com/yeahdongcn/UIColor-Hex-Swift',
+    :branch => 'master'
+    pod 'DateTools'
+    pod 'SWRevealViewController'
+    pod 'HMSegmentedControl'
+    pod 'APAddressBook',
+    :git => 'https://github.com/Alterplay/APAddressBook.git',
+    :branch => 'master'
+    pod 'Protobuf',
+    :git => 'https://github.com/google/protobuf.git’
+    pod 'MGSwipeTableCell'
+    pod 'SwiftPhotoGallery'
+end

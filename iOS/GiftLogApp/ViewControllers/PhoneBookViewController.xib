@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneBookViewController" customModule="GiftLogApp" customModuleProvider="target">
+            <connections>
+                <outlet property="noResultsLabel" destination="ZUh-1R-dM9" id="hgG-CP-2ez"/>
+                <outlet property="tableView" destination="c4B-wy-P9Q" id="GNh-TI-CH8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c4B-wy-P9Q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ySj-AO-BcE"/>
+                        <outlet property="delegate" destination="-1" id="Jb9-8t-vMk"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No contacts were found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUh-1R-dM9">
+                    <rect key="frame" x="80" y="321" width="214" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c4B-wy-P9Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NKi-Ga-DkT"/>
+                <constraint firstItem="ZUh-1R-dM9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XXN-gU-N0g"/>
+                <constraint firstAttribute="trailing" secondItem="c4B-wy-P9Q" secondAttribute="trailing" id="fDE-xZ-NLF"/>
+                <constraint firstItem="c4B-wy-P9Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kyh-rk-AfZ"/>
+                <constraint firstAttribute="bottom" secondItem="c4B-wy-P9Q" secondAttribute="bottom" id="oNS-lf-dYM"/>
+                <constraint firstItem="ZUh-1R-dM9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wcC-2O-o5k"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

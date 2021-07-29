@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UniversalAddingTableViewCell" id="KGk-i7-Jjw" customClass="UniversalAddingTableViewCell" customModule="GiftLogApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLO-LV-JGn">
+                        <rect key="frame" x="146" y="6.5" width="28" height="28"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.32549019610000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="WoZ-D9-aeA"/>
+                            <constraint firstAttribute="width" constant="28" id="i2s-vu-dEa"/>
+                        </constraints>
+                        <state key="normal" image="addButtonIcon">
+                            <color key="titleColor" red="0.56470584869384766" green="0.32549023628234863" blue="0.65882354974746704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="addingButtonDidTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JhA-Zh-MDP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gLO-LV-JGn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j3Q-lp-6ik"/>
+                    <constraint firstItem="gLO-LV-JGn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ppf-Ty-pKo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleButton" destination="gLO-LV-JGn" id="POo-Pg-D0K"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addButtonIcon" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftDetailViewController" customModule="GiftLogApp" customModuleProvider="target">
+            <connections>
+                <outlet property="headerTitleLabel" destination="bFj-8s-FS7" id="mTg-tH-bbR"/>
+                <outlet property="imageButton" destination="Hu3-xT-9mM" id="bxo-Xk-s7t"/>
+                <outlet property="tableView" destination="kMv-5V-66J" id="t1H-O4-1Zw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-5V-66J" customClass="STCollapseTableView">
+                    <rect key="frame" x="10" y="0.0" width="355" height="667"/>
+                    <color key="backgroundColor" red="0.92541915180000001" green="0.92553013559999997" blue="0.92538142199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="2gK-x1-vpc" userLabel="Header View">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="122"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu3-xT-9mM">
+                                <rect key="frame" x="140" y="8" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="my1-HS-r4W"/>
+                                    <constraint firstAttribute="width" constant="75" id="tfw-7J-nMl"/>
+                                </constraints>
+                                <state key="normal" image="imageThumb"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="37.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIFT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-8s-FS7">
+                                <rect key="frame" x="133.5" y="91" width="88.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92541915180000001" green="0.92553013559999997" blue="0.92538142199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hu3-xT-9mM" firstAttribute="centerX" secondItem="2gK-x1-vpc" secondAttribute="centerX" id="MdV-S5-j1N"/>
+                            <constraint firstItem="Hu3-xT-9mM" firstAttribute="top" secondItem="2gK-x1-vpc" secondAttribute="top" constant="8" id="Mdc-78-0Yr"/>
+                            <constraint firstItem="bFj-8s-FS7" firstAttribute="centerX" secondItem="2gK-x1-vpc" secondAttribute="centerX" id="N9L-59-I8T"/>
+                            <constraint firstItem="bFj-8s-FS7" firstAttribute="top" secondItem="Hu3-xT-9mM" secondAttribute="bottom" constant="8" id="Nm4-gM-5ze"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QXG-zj-q5c"/>
+                        <outlet property="delegate" destination="-1" id="7Ks-kv-Epf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92541915180000001" green="0.92553013559999997" blue="0.92538142199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kMv-5V-66J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="IeR-O7-lTm"/>
+                <constraint firstItem="kMv-5V-66J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M9W-gH-RJT"/>
+                <constraint firstAttribute="trailing" secondItem="kMv-5V-66J" secondAttribute="trailing" constant="10" id="PA1-vw-BY0"/>
+                <constraint firstAttribute="bottom" secondItem="kMv-5V-66J" secondAttribute="bottom" id="qtf-NY-99I"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageThumb" width="183" height="183"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="GiftLogApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSH-Hz-2Ir">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galleryImageThumb" translatesAutoresizingMaskIntoConstraints="NO" id="eZs-nF-XJo">
+                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eZs-nF-XJo" secondAttribute="trailing" constant="10" id="Hrq-jo-oFM"/>
+                <constraint firstItem="TSH-Hz-2Ir" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jmg-gQ-Yp7"/>
+                <constraint firstItem="eZs-nF-XJo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MnG-Vg-2yg"/>
+                <constraint firstAttribute="trailing" secondItem="TSH-Hz-2Ir" secondAttribute="trailing" id="RbM-PO-TE6"/>
+                <constraint firstItem="TSH-Hz-2Ir" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YQU-RS-43G"/>
+                <constraint firstItem="eZs-nF-XJo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="kVe-th-Ius"/>
+                <constraint firstAttribute="bottom" secondItem="TSH-Hz-2Ir" secondAttribute="bottom" id="kiU-my-NXj"/>
+                <constraint firstAttribute="bottom" secondItem="eZs-nF-XJo" secondAttribute="bottom" constant="10" id="s0N-DJ-aUg"/>
+            </constraints>
+            <connections>
+                <outlet property="addImageView" destination="eZs-nF-XJo" id="d9T-gZ-6xS"/>
+                <outlet property="giftImageView" destination="TSH-Hz-2Ir" id="4G8-3b-dG2"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="galleryImageThumb" width="53" height="53"/>
+    </resources>
+</document>
